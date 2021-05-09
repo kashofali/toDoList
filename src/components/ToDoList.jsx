@@ -14,7 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#fcd1d1",
+    backgroundColor: "#e4fbff",
     color: "#e7e6e1",
     height: "100%",
     minHeight: "1000px",
@@ -35,9 +35,9 @@ const useStyles = makeStyles((theme) => ({
   listItem: {
     backgroundColor: "#3258a5",
     borderRadius: "12px",
-    margin: "0.5rem 0.3rem 0.5rem 1rem",
+    margin: "0.5rem 0.3rem 0.5rem 2.4rem",
     textAlign: "center",
-    width: "80%",
+    width: "70%",
   },
 }));
 
