@@ -2,6 +2,7 @@ import React, { Component } from "react";
 const clockTile = {
   color: "white",
   display: "inline-block",
+  fontSize: "1.3rem",
   paddingLeft: "10px",
   position: "absolute",
   right: "2rem",
@@ -20,7 +21,7 @@ class Clock extends Component {
   }
   getCurrentTime = () => {
     const locale = this.props.locale ? this.props.locale : [];
-    const hour24 = this.props.hour24 == false ? false : true;
+    const hour24 = this.props.hour24 === false ? false : true;
     let hour, minute, second;
     if (this.props.format) {
       switch (this.props.format.toLowerCase()) {
