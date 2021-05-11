@@ -14,18 +14,20 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#e4fbff",
+    backgroundImage: "url(./img/todo.png)",
+    backgroundSize: "cover",
+    // backgroundColor: "#e4fbff",
     color: "#e7e6e1",
-    height: "100%",
-    minHeight: "1000px",
+    height: "55rem",
+    overflowY: "scroll",
     width: "100%",
   },
   container: {
     maxWidth: 560,
-    textAlign: "center",
   },
   heading: {
     color: "#3258a5",
+    textAlign: "center",
     padding: "6rem 0 2rem",
   },
   textfield: {
@@ -73,8 +75,6 @@ export default function ToDoList() {
 
   return (
     <div className={classes.root}>
-      
-
       <Container className={classes.container}>
         <div className={classes.heading}>
           <Typography variant="h2">To-Do List</Typography>
